@@ -1,0 +1,462 @@
+body{
+    background-color: rgb(244, 244, 244);
+}
+/*
+CORES
+#7F8C4F
+#F2BA52
+#BF9C5A
+#593414
+#F2F2F2
+
+font-family: "Lato", sans-serif;
+font-family: "Oswald", sans-serif;
+font-family: "Bebas Neue", sans-serif;
+font-family: "Josefin Sans", sans-serif;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+h1{
+    font-family: "Oswald", sans-serif;
+    text-shadow: 4px 4px 6px #3b3b3a;
+    font-weight: 700;
+    font-size: max(44px, 5.2vw);
+}
+
+h2{
+    font-family: "Bebas Neue", sans-serif;
+    text-shadow: 4px 4px 6px #464646;
+    font-weight: 700;
+    font-size: max(20px, 2.8vw);
+}
+
+/* ------BOTÃO CHAMADA------ */
+
+div.chamada a{
+    font-size: max(18px, 1.8vw);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-weight: 500;
+    background: linear-gradient(rgba(118, 154, 74, 0.912), rgba(35, 34, 28, 0.723));
+
+    display: inline-block;
+
+    animation-name: HeaderA-moverParaCima;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    transition: .3s ease-in-out;
+}
+
+div.chamada a:hover{
+    opacity: .8;
+}
+
+/*-----------------*/
+/*ELEMENTOS HEADER*/
+/*-----------------*/
+
+header{
+    max-width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.755), rgba(0, 0, 2, 0.207)), url('../images/headercapa.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    position: relative;
+}
+
+/*-----------------*/
+/*NAVEBAR(O PAI DE TODOS DO HEADER)*/
+/*-----------------*/
+
+header nav#nav-esquerda{
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+header nav#nav-esquerda div#logo{
+    max-width: 125px;
+    max-height: 100px;
+    margin-left: 2rem;
+}
+
+header nav#nav-esquerda div#logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*-----------------*/
+/*MENU HAMBURGUER*/
+/*-----------------*/
+
+header nav#nav-esquerda ul#icone-menu{
+    display: none;
+}
+
+header nav#nav-esquerda ul#icone-menu li{
+    list-style: none;
+}
+
+header nav#nav-esquerda ul#icone-menu li ion-icon{
+    font-size: 50px;
+    color:#ffffff;
+    margin-right: 2rem;
+}
+
+/*-----------------*/
+/*MENU PRINCIPAL*/
+/*-----------------*/
+
+header nav#nav-esquerda ul.menu-principal{
+    margin-left: 5rem;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header nav#nav-esquerda ul.menu-principal li{
+    list-style: none;
+    margin-right: 2rem;
+
+}
+
+header nav#nav-esquerda ul.menu-principal li a{
+    text-decoration: none;
+    color: #3f4724;
+    font-size: 110%;
+    text-shadow: 4px 6px 10 px #000;
+    padding-bottom: 10px;
+    transition: .3s ease-in-out;
+
+}
+header nav#nav-esquerda ul.menu-principal li a:hover{
+    opacity: .6;
+    border-bottom: 1px solid #fff;
+
+}
+
+/* -------CHAMADA------ */
+
+header div.chamada{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header div.chamada h1{
+    color: #b48734ee;
+    
+
+    animation-name: HeaderH1-moverParaDireita;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+
+}
+
+header div.chamada h2{
+    color: #ffffff;
+
+    margin-bottom: 55px;
+
+    animation-name: HeaderH1-moverParaDireita;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+/*-----------------*/
+/*    SOBRE        */
+/*-----------------*/
+
+section.sobre{
+    max-width: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+section.sobre div.sobre-mestre{
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+section.sobre div.sobre-mestre img{
+    border: 3px solid #7c8c48;
+}
+
+section.sobre div.sobre-mestre h2{
+    font-size: max(22px, 1.8vw);
+    margin-top: 10px;
+}
+
+/*-----------------*/
+/*    carrosel      */
+/*-----------------*/
+
+section.serviços{
+    width: 99%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid #3b3b3a;
+    border-bottom: 5x solid #3b3b3a;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-bottom: 70px;
+    color: #fff;
+
+    background-color: #3f4724;
+    
+}
+
+section.serviços div.serviços-mestre h2{
+    margin-top: 40px;
+    
+    margin-bottom: 50px;
+    max-width: 950px;
+    text-align: center;
+    color: #fff
+    font-size: max(22px, 1.8vw)
+}
+
+section.serviços div.serviços-mestre{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+
+}
+
+section.serviços div.serviços-mestre div.serviços-texto{
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+
+}
+
+section.serviços div.serviços-mestre div.serviços-texto p{
+    width: 95%;
+    margin: auto;
+    color: #fff;
+    text-shadow: 2px 2px 5px #3b3b3a;
+    font-size: max(16px, 1vw);
+}
+
+section.serviços div.serviços-mestre div.carousel-item{
+    padding-top: 40px;
+    max-width: 400%; /* Largura de 50% do contêiner */
+ 
+  }
+
+section.serviços div.serviços-mestre div.carousel-inner img{
+    max-width: 100%;
+}
+
+
+section.serviços  div.chamada{
+    padding-top: 60px;
+    align-items: center;
+    text-align: center;
+
+}
+
+/*-----------------*/
+/*    madeiras     */
+/*-----------------*/
+section.madeiras{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+
+}
+section.madeiras  h2{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    max-width: 950px;
+    font-size: max(30px, 2.8vw);
+    text-align: center;
+    color: #1d1d1d;
+
+}
+
+section.madeiras div.madeiras-mestre{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+section.madeiras div.madeiras-mestre img{
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+section.madeiras div.madeiras-mestre div.card{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+section.madeiras div.madeiras-mestre div.card img{
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+/*-----------------*/
+/*   elementos do footer     */
+/*-----------------*/
+
+footer{
+    width: 100%;
+    background-color: #3f4724;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer div.footer-container{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.footer-container div.logo-footer{
+    width: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+
+}
+footer div.footer-container div.logo-footer img{
+    max-width: 100%;
+}
+
+footer div.footer-container div.footer-info{
+    width: 70%;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+footer div.footer-container div.footer-info nav.nav-footer ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 110%;
+
+    transition: .3s ease-out;
+}
+footer div.footer-container div.footer-info nav.nav-footer ul li a:hover{
+   border: 2px solid#628051;
+}
+
+footer div.footer-container div.footer-info div.cartoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer div.footer-container div.footer-info div.cartoes span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    font-size: max(16px, 1.5vw);
+}
+
+footer div.footer-container div.footer-info div.cartoes div.footer-img-cartoes{
+    max-width: 350px;
+}
+
+footer div.footer-container div.footer-info div.cartoes div.footer-img-cartoes img{
+    max-width: 100%;
+}
+
+footer span.autorais{
+    color: #fff;
+    font-size: max(14px, .8vw);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+main div.serviços-mestre div.carousel-inner{
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+  
+    
+   
+
+main div.serviços-mestre div.carousel-inner img{
+    max-width: 100%;
+ 
+}

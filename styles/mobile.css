@@ -1,0 +1,144 @@
+/*
+CORES
+#7F8C4F
+#F2BA52
+#BF9C5A
+#593414
+#F2F2F2
+
+font-family: "Lato", sans-serif;
+font-family: "Oswald", sans-serif;
+font-family: "Bebas Neue", sans-serif;
+font-family: "Josefin Sans", sans-serif;
+*/
+
+
+/*-----------------*/
+/*ELEMENTOS HEADER*/
+/*-----------------*/
+
+@media screen and (max-width:1600px) {
+    header{
+        background: linear-gradient(rgba(255, 255, 255, 0.755), rgba(0, 0, 2, 0.207)), url('../images/headercapam.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header{
+        background: linear-gradient(rgba(255, 255, 255, 0.755), rgba(0, 0, 2, 0.207)), url('../images/headercapap.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+/*-----------------*/
+/*NAVEBAR(O PAI DE TODOS DO HEADER)*/
+/*-----------------*/
+
+@media screen and (max-width: 1110px){
+    header nav#nav-esquerda ul.menu-principal li a{
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width:970px) {
+    
+    header nav#nav-esquerda div#logo{
+        margin-left: 1rem;
+    }
+
+       /* MENU HAMBURGUER */
+
+    header nav#nav-esquerda{
+        justify-content: space-between;
+    }   
+
+    header nav#nav-esquerda ul#icone-menu{
+        display: flex;
+    } 
+
+    header nav#nav-esquerda ul#icone-menu li#menuX{
+        display: none;
+    } 
+
+
+     /* MENU  */
+
+     header nav#nav-esquerda ul.menu-principal{
+        flex-direction: column;
+        width: 80%;
+        height: 70vh;
+        flex-direction: column;
+        background: linear-gradient(rgba(114, 132, 72, 0.7),rgba(255, 255, 255, 0.755));
+        padding-top: .5rem;
+
+        position: absolute;
+        top: 7rem;
+        right: 0;
+        z-index: 999;
+
+        display: none;
+     }
+
+     header nav#nav-esquerda ul.menu-principal li{
+        margin: .5rem;
+     }
+
+    header nav#nav-esquerda ul.menu-principal li a{
+        font-size: 120%   
+     }
+    
+    
+}     
+
+ /* elemento footer  */
+
+@media screen and (max-width: 765px) {
+   footer div.footer-container div.footer.info{
+        width: 95%;
+   } 
+   footer div.footer-container div.footer.info div.cartoes div.footer-img-cartoes{
+    max-width: 200px;
+   }
+
+}
+
+ /* serviços mestre  */
+
+ @media screen and (max-width: 700px) {
+    main div.serviços-mestre div.carousel-inner{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 18px;
+        
+        
+
+    }
+    main div.serviços-mestre div.carousel-inner img{
+        max-width: 200px;
+    }
+ }
+
+ 
+ /* madeiras-mestre  */
+@media screen and (max-width:700px) {
+    section.madeiras div.madeiras-mestre div.card{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 8px;
+        text-align: center;
+    }
+
+    section.madeiras div.madeiras-mestre div.card img{
+        max-width: 200px;
+        justify-content: center;
+    }
+    
+    
+}
