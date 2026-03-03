@@ -447,7 +447,7 @@ footer span.autorais{
     flex-direction: column;
 }
 
-span.redes a{
+footer span.redes a{
     font-size: max(18px, 1.8vw);
     color: #ffffff;
     text-decoration: none;
@@ -466,14 +466,6 @@ span.redes a{
     transition: .3s ease-in-out;
 }
 
-footer span.redes{
-    color: #fff;
-    font-size: max(14px, .8vw);
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
 main div.serviços-mestre div.carousel-inner{
     max-width: 500px;
