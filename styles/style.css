@@ -444,6 +444,35 @@ footer span.autorais{
     margin-top: 20px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+span.redes a{
+    font-size: max(18px, 1.8vw);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-weight: 300;
+    background: linear-gradient(rgba(196, 181, 106, 0.912), rgba(35, 34, 28, 0.723));
+
+    display: inline-block;
+
+    animation-name: HeaderA-moverParaCima;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    transition: .3s ease-in-out;
+}
+
+footer span.redes{
+    color: #fff;
+    font-size: max(14px, .8vw);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 main div.serviços-mestre div.carousel-inner{
